@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Punto uno</title>
+    </head>
+    <body>
+    <fieldset>
+        <legend>Suma de numeros pares e impares</legend>
+        <input type="button" onclick="Sumar();" value="Empezar">
+    </fieldset>
+    </body>
+    <script>
+        var sumatorio1=0;
+        var sumatorio2=0;
+        function Sumar() {
+            var n1 = prompt("Digite un numero").toLowerCase();
+            for(var i=0; i<=n1; i++){
+                if(i%2==0){
+                    sumatorio1+= i; 
+                }   
+            }
+            document.write("<br/>Suma de numeros pares: "+sumatorio1)  
+            for(var i=0; i<=n1; i++){
+                if(i%2!=0){
+                    sumatorio2+= i; 
+                }   
+            }
+            document.write("<br/>Suma de numeros impares: "+sumatorio2)  
+        }
+    </script>
+</html>

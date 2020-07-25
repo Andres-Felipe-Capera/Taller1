@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Punto Siete</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Palabra al revez con JS</legend>
+        <input type="button" onclick="texto();" value="Empezar">
+    </fieldset> 
+</body>
+<script>
+    function texto() {
+        var palabra = prompt("Escribe una palabra").toLowerCase();
+        var palabraal='';
+
+        for (var i = palabra.length -1;i>=0;i--) {
+            palabraal+=palabra[i];
+        }
+        alert(palabraal+"JS");
+    }
+
+    
+</script>
+
+</html>

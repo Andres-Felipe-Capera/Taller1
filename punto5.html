@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Punto tres</title>
+</head>
+
+<body>
+    
+</body>
+<script>
+    function texto() {
+       
+        do{
+            var valor = prompt("Escribe el valor").toLowerCase();
+            
+        }while(valor!=100 || valor!=FF);
+        
+        palabra = palabra.replace(/ /g, "");
+
+        for (var i = 0; i < palabra.length; i++) {
+            if (palabra[i] != palabra[palabra.length - i - 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    if (texto()) {
+        alert("Esto es palíndromo");
+    } else {
+        alert("Esto no es palíndromo")
+    }
+</script>
+
+</html>
